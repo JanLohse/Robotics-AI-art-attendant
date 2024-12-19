@@ -3,7 +3,7 @@
 
 This repository includes the code to run the automatic AI art attendant with a Scout Mini robot.
 
-# Usage
+## Usage
 
 API keys for for Google Gemini, ngrok, and Microsoft Azure have to be placed in a .env file to run the code.
 
