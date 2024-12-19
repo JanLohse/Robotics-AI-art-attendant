@@ -179,12 +179,12 @@ def main(camera, robot, gemini, demo=False, shorten=False):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(prog="art_attendant")
+    parser = argparse.ArgumentParser(prog="art_attendant", description="Starts the automatic AI art attendant")
     parser.add_argument('ngrok_url')
-    parser.add_argument('-c', '--camera', type=int, default=0)
-    parser.add_argument('-d', '--demo', action='store_true')
-    parser.add_argument('-s', '--shorten', type=int, default=0)
-    parser.add_argument('-a', '--angle', type=int, default=1.23, help='horizontal angle of view')
+    parser.add_argument('-c', '--camera', type=int, default=0, help="ID of the webcam")
+    parser.add_argument('-d', '--demo', action='store_true', help="Activate demo mode to bypass connection to robot and colab notebook")
+    parser.add_argument('-s', '--shorten', type=int, default=0, help="Specify the intendent maximum number of sentences for the language model")
+    parser.add_argument('-a', '--angle', type=int, default=1.23, help="Horizontal angle of view of the webcam in radians")
     args = parser.parse_args()
 
     camera = cv.VideoCapture(args.camera)
