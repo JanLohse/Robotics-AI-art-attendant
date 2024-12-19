@@ -1,0 +1,10 @@
+azure-cognitiveservices-speech
+pyagxrobots
+wrapt==1.15.0
+google.generativeai
+opencv-python
+matplotlib
+python-dotenv
+ipython
+SpeechRecognition
+pyaudio
